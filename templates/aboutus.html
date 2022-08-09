@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="static/styles/style_aboutus.css" />
+        <title>Huddle</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <div class="logo"><a href="/">Huddle</a></div>
+                <div class="toggle"></div>
+              </header>
+
+            <video src="static/video.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            
+              <div class="card">
+                <h5 class="card-header">Santit<br>Shakya</h5>
+                <div class="card-body">
+                  <h5 class="card-title">santitshakya7@gmail.com</h5>
+                  <p class="card-text">Co-Founder</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">Siddhartha<br>Devkota</h5>
+                <div class="card-body">
+                  <h5 class="card-title">siddhartha.devkota@gmail.com</h5>
+                  <p class="card-text">Co-Founder</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">Nitesh<br>Rajbanshi</h5>
+                <div class="card-body">
+                  <h5 class="card-title">niteshrajbanshi78@gmail.com</h5>
+                  <p class="card-text">Co-Founder</p>
+                  <a href="#" class="btn btn-primary">Contact</a>
+                </div>
+              </div>
+
+            <ul class="social">
+              <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            </ul>
+        </section>
+        <section class="teamtitle">
+            <div class="ourteam">
+                <h2>OUR TEAM</h2>  
+            </div>
+        </section>
+        <div class="teamname">
+            <h4>Fractals</h4>
+        </div>
+          <div class="menu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="{{ url_for('resource') }}">Resources</a></li>
+              <li><a href="{{ url_for('map') }}">Helpful Map</a></li>
+              <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+            </ul>
+          </div>
+          
+    </body>
+    <script>
+         const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</html>

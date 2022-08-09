@@ -1,0 +1,71 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey! I am Huddle.",
+          "Hello, thanks for visiting. I am Huddle.",
+          "Hi there, I am Huddle."
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "Thanks for visiting",
+          "Have a nice day",
+          "Bye! If you need someone to help you out, I am here"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "help",
+        "patterns": [
+          "HELP",
+          "I need assistance",
+          "I need help"
+        ],
+        "responses": [
+          "What kind of help exactly? Can you be specific? Our Resources tab can be useful for you. Check it out.",
+          "What kind of help exactly? Can you be specific? Check out the Resources tab to find many helpful articles, videos, etc. related to mental health. I hope it will be useful for you."
+        ]
+      },
+      {
+        "tag": "supportgroup",
+        "patterns": [
+          "Support groups",
+          "Online support groups"
+        ],
+        "responses": [
+          "There are support groups like- Connections: Support group for people with mental health conditions like schizophrenia, bipolar, sever depression, etc. For more info, please register here."
+        ]
+      },
+      {
+        "tag": "mentalhealth",
+        "patterns": [
+          "Mental Health",
+          "depression",
+          "Anxiety",
+          "suicide",
+          "die",
+          "take my life"
+        ],
+        "responses": [
+          "You are not alone. I really hope you check out the resources here.",
+          "Please check out the resources here. It can help you. Remember that you are not alone."
+        ]
+      }
+    ]
+  }
